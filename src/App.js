@@ -17,7 +17,7 @@ function App() {
 			<BookEditDetails open={editBookOpen} onClose={() => setEditBookOpen(false)}></BookEditDetails>
 			<Navbar />
 			<Routes>
-				<Route path="/" element={<BookStore />} />
+				<Route path="/bookstore-app" element={<BookStore />} />
 			</Routes>
 		</Provider>
 	);
