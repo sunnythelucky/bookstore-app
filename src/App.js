@@ -1,13 +1,13 @@
 import "./App.css";
 import store from "./store";
 import { Provider } from "react-redux";
-import { Navbar } from "./Components/NavBar";
+import { Navbar } from "./components/NavBar";
 import { StoreContext } from "./context/store-context";
-import BookDetails from "./Components/BookDetails";
+import BookDetails from "./components/BookDetails";
 import { useContext } from "react";
 import { Route, Routes } from "react-router";
-import BookStore from "./Components/BookStore";
-import BookEditDetails from "./Components/BookEditDetails";
+import BookStore from "./components/BookStore";
+import BookEditDetails from "./components/BookEditDetails";
 
 function App() {
 	const { addBookOpen, setAddBookOpen, editBookOpen, setEditBookOpen } = useContext(StoreContext);
