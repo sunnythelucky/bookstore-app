@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useDispatch } from "react-redux";
 import { deleteBook } from "../actions/bookAction";
 import { StoreContext } from "../context/store-context";
+import bookImage from "../book.jpg";
 
 export const Books = (props) => {
 	const dispatch = useDispatch();
@@ -22,7 +23,7 @@ export const Books = (props) => {
 	return (
 		<div className="product" onClick={(e) => handleBookClick(e, id)}>
 			<div className="description">
-				<img src="book.jpg" alt="book icon" />
+				<img src={bookImage} alt="book icon" />
 				<p>Name: {name}</p>
 				<p>Price: {price}</p>
 				<p>Category : {category}</p>
